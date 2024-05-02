@@ -1,0 +1,330 @@
+.landing-page-background {
+  background-color: #750FF9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: large;
+  width: 100vw;
+  height: 100vh;
+}
+.landing-page-text {
+  color: #D9F14F;
+  font-size: 3rem;
+  font-family:'Times New Roman', Times, serif;
+  opacity: 0;
+}
+
+.landing-page-text.fade-in {
+  animation: fadeIn 2s ease-in-out forwards;
+}
+
+.landing-page-text.fade-out {
+  animation: fadeOut 1s ease-in-out forwards;
+}
+
+.page-title {
+  font-size: 3rem;
+  font-family:'Times New Roman', Times, serif;
+  color: #5c11bf;
+  margin-bottom: 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.my-8 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.mb-8 {
+  margin-bottom: 2rem;
+}
+
+.mr-8 {
+  margin-right: 2rem;
+}
+
+.two-buttons-side-by-side {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.center-stuffs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.list-card {
+  background-color: #FFFFFF;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+  margin: .75rem;
+  min-width: 300px;
+}
+
+.list-card-title {
+  font-size: 1.5rem;
+  font-family:'Times New Roman', Times, serif;
+  color: #000000;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-left: .5rem;
+  margin: 0, .75rem;
+}
+
+.input-stuff {
+  height: 1.5rem;
+  width: 100%;
+  border: black 1px solid;
+  background-color: #FFFFFF;
+}
+
+.new-list-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+}
+
+.form-row label {
+  margin-right: 1rem;
+}
+
+.input {
+ border: #750FF9 1px solid;
+ height: 2rem;
+ width: 12rem;
+ border-radius: 5px;
+}
+
+.input:hover{
+  border: #5f0ccc 2px solid;
+}
+
+.full-page {
+  height: 100vh;
+}
+
+.input-label {
+  margin: .5rem;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.priorities-list {
+  list-style-type: none;
+}
+
+.add-new-button-container {
+  border-radius: 20px;
+  border: 2px solid purple;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  margin-bottom: 20px;
+  width: 4rem;
+}
+
+.prioritize-button-container {
+  border-radius: 20px;
+  border: 2px solid purple;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  margin-bottom: 20px;
+  width: auto;
+}
+
+.prioritize-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: purple;
+  color: white;
+  font-weight: bold;
+}
+
+.add-new-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: purple;
+  color: white;
+  font-weight: bold;
+  text-align: left;
+}
+
+.add-new-button:hover {
+  background-color: white;
+  color: purple;
+}
+
+.add-new-button.active {
+  background-color: white;
+  color: purple;
+}
+
+.compare-button-container {
+  border-radius: 20px;
+  border: 2px solid purple;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.save-button-container {
+  border-radius: 20px;
+  border: 2px solid purple;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  margin-bottom: 20px;
+  width: 15rem;
+}
+
+.save-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: purple;
+  color: white;
+  font-weight: bold;
+  text-align: left;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.save-button:hover {
+  background-color: white;
+  color: purple;
+}
+
+.save-button.active {
+  background-color: white;
+  color: purple;
+}
+
+.compare-button {
+  display: flex;
+  justify-content: center;
+  padding: 10px 20px;
+  background-color: white;
+  color: purple;
+  font-weight: bold;
+  text-align: left;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.compare-button:hover {
+  background-color: purple;
+  color: white;
+}
+
+.compare-button.active {
+  background-color: black;
+  color: white;
+}
+
+.list-card-date {
+  font-size: 1rem;
+  font-family:'Times New Roman', Times, serif;
+  color: #000000;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-left: .5rem;
+}
+
+.add-new-list-button-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 1rem;
+  height: 5rem;
+  background-color: #750FF9;
+}
+
+.create-new-button {
+  font-size: 1rem;
+  color: #750FF9;
+  border: #750FF9 2px solid;
+  border-radius: 10px;
+  background-color: #F3EBE8;
+  cursor: pointer;
+  padding: .5rem;
+}
+
+.add-new-list-button {
+  font-size: 1rem;
+  color: #FFFFFF;
+  background-color: #750FF9;
+  cursor: pointer;
+  margin-right: 40vw;
+}
+
+.page-background {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background-color: #f2f2f2;
+}
+
+.title-container {
+  margin-bottom: 20px;
+}
+
+.comparison-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.priority-container {
+  text-align: center;
+}
+
+.comparison-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.comparison-item button {
+  margin-top: 20px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
