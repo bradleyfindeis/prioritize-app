@@ -20,12 +20,12 @@
 
 .landing-page-text.fade-out {
   animation: fadeOut 1s ease-in-out forwards;
-}
+} 
 
 .page-title {
   font-size: 3rem;
   font-family:'Times New Roman', Times, serif;
-  color: #5c11bf;
+  color: purple;
   margin-bottom: 0;
   display: flex;
   align-items: flex-start;
@@ -49,6 +49,7 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
 }
 
 .center-stuffs {
@@ -127,12 +128,20 @@
 }
 
 .add-new-button-container {
-  border-radius: 20px;
-  border: 2px solid purple;
+  border-radius: .5rem;
+  border: 1px solid purple;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
   overflow: hidden;
   margin-bottom: 20px;
-  width: 4rem;
+  width: 8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.add-new-button-container:hover {
+  background-color: purple;
+  color: white;
 }
 
 .prioritize-button-container {
@@ -152,6 +161,15 @@
   background-color: purple;
   color: white;
   font-weight: bold;
+  border-radius: 20px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  width: auto;
+}
+
+.prioritize-button:hover {
+  background-color: white;
+  color: purple;
+  cursor: pointer;
 }
 
 .add-new-button {
@@ -159,21 +177,27 @@
   justify-content: center;
   align-items: center;
   padding: 10px 20px;
-  background-color: purple;
-  color: white;
+  color: purple;
   font-weight: bold;
   text-align: left;
+  border: none;
+  border-radius: .5rem;
+  border: 1px solid purple;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  margin-bottom: 20px;
+  width: 8rem;
 }
 
 .add-new-button:hover {
-  background-color: white;
-  color: purple;
+  background-color: purple;
+  color: white;
 }
 
-.add-new-button.active {
+/* .add-new-button.active {
   background-color: white;
   color: purple;
-}
+} */
 
 .compare-button-container {
   border-radius: 20px;

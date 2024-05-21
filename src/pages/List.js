@@ -53,7 +53,7 @@ function List() {
           <ul>
             {listItems.map((item) => (
               <li key={item.id}>
-                {item.title} - {item.votes_count}
+                {item.name} - {item.votes_count}
               </li>
             ))}
           </ul>
@@ -74,7 +74,7 @@ function List() {
                 onChange={(event) => setNewItemName(event.target.value)}
                 placeholder="Enter new item name"
               />
-              <div className="add-new-button-container">
+              <div className="">
                 <button className="add-new-button" type="submit">
                   Add Item
                 </button>
@@ -85,7 +85,7 @@ function List() {
             ? listItems.map((item) => <ListItem key={item.id} item={item} />)
             : null}
         </div>
-        <div className="prioritize-button-container">
+        <div>
           <button className="prioritize-button" onClick={handlePrioritize}>
             Prioritize
           </button>

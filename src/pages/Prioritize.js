@@ -13,9 +13,7 @@ const Prioritize = () => {
   const [comparedAll, setComparedAll] = useState(false);
 
   useEffect(() => {
-    // get tje list from local storage
     const theList = JSON.parse(localStorage.getItem("lists")) || [];
-    // find the list with the id
     const foundList = theList.find((list) => list.id === parseInt(id));
     if (!foundList) {
       window.location.href = "/lists";
@@ -62,26 +60,18 @@ const Prioritize = () => {
   };
 
   const onSave = () => {
-    // fetch(`http://localhost:3000/lists/${id}/vote`, {
-    //   method: "POST",
-    //   headers: {
-    //     "Content-Type": "application/json",
-    //   },
-    //   body: JSON.stringify({ sorted: sorted, completed: comparedAll }),
-    // })
-    //   .then((response) => response.json())
-    //   .then((data) => {
-    //     if (data.error) {
-    //       alert(data.message);
-    //     } else {
-    //       alert(data.message);
-    //       window.location.href = `/lists/${id}`;
-    //     }
-    //   });
-
     const theList = JSON.parse(localStorage.getItem("lists")) || [];
     const foundList = theList.find((list) => list.id === parseInt(id));
-    foundList.listItems = sorted;
+    let sorted = [];
+    sorted = foundList.listItems.map((item) => {
+      let found = sorted.find((sortedItem) => sortedItem.id === item.id);
+      if (found) {
+        found.votes = found.votes + item.votes;
+        return found;
+      } else {
+        return item;
+      }
+    });
     foundList.completed = comparedAll;
     localStorage.setItem("lists", JSON.stringify(theList));
     window.location.href = `/lists/${id}`;
@@ -110,7 +100,7 @@ const Prioritize = () => {
                 <li key={index}>{item.name} - {item.votes}</li>
               ))}
             </ul>
-          </div>          
+          </div>     
         </div>
       );
     } else {

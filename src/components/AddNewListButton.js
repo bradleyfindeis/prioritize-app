@@ -6,7 +6,7 @@ function AddNewListButton() {
   };
 
   return (
-    <div className="add-new-button-container">
+    <div className="">
       <div className='add-new-button' onClick={handleClick}>+</div>
     </div>  
   );
